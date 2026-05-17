@@ -27,15 +27,12 @@ export default function Logo({
       className={cn('inline-flex items-center', className)}
     >
       <Image
-        src="/logo.png"
+        src={variant === 'light' ? '/logo-cream.png' : '/logo.png'}
         alt="MORE Laser & Spa"
         width={dims.w}
         height={dims.h}
         priority={size === 'lg'}
-        className={cn(
-          'h-auto w-auto object-contain',
-          variant === 'light' && 'brightness-0 invert opacity-95'
-        )}
+        className="h-auto w-auto object-contain"
         style={{ maxWidth: dims.w, maxHeight: dims.h }}
       />
     </Link>
