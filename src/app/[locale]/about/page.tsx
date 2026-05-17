@@ -33,10 +33,10 @@ function About() {
                 aria-hidden
                 className="absolute -inset-3 md:-inset-4 border border-gold/50 translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6"
               />
-              <div className="relative aspect-[520/650] overflow-hidden bg-cream shadow-2xl">
+              <div className="relative aspect-[456/626] overflow-hidden bg-cream shadow-2xl">
                 <Image
-                  src="/laser-machine.png"
-                  alt="MORE Laser Pro 2024 KM1000D diode laser"
+                  src="/our-technology.png"
+                  alt="MORE Laser Pro 2024 KM1000D — the diode laser in our Ubud studio"
                   fill
                   sizes="(min-width: 768px) 360px, 80vw"
                   quality={90}
