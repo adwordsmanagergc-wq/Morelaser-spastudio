@@ -24,8 +24,7 @@ function HomeContent() {
       key: 'laser',
       icon: <Sparkles strokeWidth={1} size={32} />,
       href: `${prefix}/services`,
-      image:
-        'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80'
+      image: '/service-laser.png'
     },
     {
       key: 'endosphere',
@@ -38,15 +37,13 @@ function HomeContent() {
       key: 'facial',
       icon: <Flower2 strokeWidth={1} size={32} />,
       href: `${prefix}/services`,
-      image:
-        'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=1200&q=80'
+      image: '/service-facial.png'
     },
     {
       key: 'shaving',
       icon: <Scissors strokeWidth={1} size={32} />,
       href: `${prefix}/services`,
-      image:
-        'https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=1200&q=80'
+      image: '/service-shaving.png'
     },
     {
       key: 'combo',
