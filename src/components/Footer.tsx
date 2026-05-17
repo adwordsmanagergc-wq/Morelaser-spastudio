@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="bg-teal-deep text-cream/90">
       <div className="container-edge py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
-          <Logo size="md" className="!text-cream" />
+          <Logo size="md" variant="light" />
           <p className="mt-6 text-sm leading-relaxed text-cream/70 max-w-xs">
             {t('footer.tagline')}
           </p>

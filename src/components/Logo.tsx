@@ -1,40 +1,43 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/cn';
 
 export default function Logo({
   className,
   size = 'md',
-  href = '/'
+  href = '/',
+  variant = 'dark'
 }: {
   className?: string;
   size?: 'sm' | 'md' | 'lg';
   href?: string;
+  variant?: 'dark' | 'light';
 }) {
-  const sizes = {
-    sm: { wrap: 'gap-2', circle: 'w-10 h-10', label: 'text-[8px]' },
-    md: { wrap: 'gap-3', circle: 'w-14 h-14', label: 'text-[9px]' },
-    lg: { wrap: 'gap-4', circle: 'w-20 h-20', label: 'text-[10px]' }
-  } as const;
-  const s = sizes[size];
+  // Source logo aspect ratio: 1750 × 1099 (≈ 1.59:1)
+  const dims = {
+    sm: { w: 110, h: 69 },
+    md: { w: 150, h: 94 },
+    lg: { w: 220, h: 138 }
+  }[size];
 
   return (
     <Link
       href={href}
       aria-label="MORE Laser & Spa"
-      className={cn('inline-flex flex-col items-center text-teal-deep', s.wrap, className)}
+      className={cn('inline-flex items-center', className)}
     >
-      <span
+      <Image
+        src="/logo.png"
+        alt="MORE Laser & Spa"
+        width={dims.w}
+        height={dims.h}
+        priority={size === 'lg'}
         className={cn(
-          'flex items-center justify-center rounded-full border border-gold/70',
-          'font-serif italic tracking-tight',
-          s.circle
+          'h-auto w-auto object-contain',
+          variant === 'light' && 'brightness-0 invert opacity-95'
         )}
-      >
-        <span className="text-lg md:text-xl leading-none">More</span>
-      </span>
-      <span className={cn('font-sans uppercase tracking-ultra text-teal-deep/80', s.label)}>
-        Laser & Spa
-      </span>
+        style={{ maxWidth: dims.w, maxHeight: dims.h }}
+      />
     </Link>
   );
 }
