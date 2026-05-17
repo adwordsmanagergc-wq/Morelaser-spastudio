@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import FadeIn from '@/components/FadeIn';
@@ -27,13 +28,31 @@ function About() {
             </p>
           </FadeIn>
           <FadeIn className="md:col-span-5" delay={0.15}>
-            <div
-              className="aspect-[4/5] w-full bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1400&q=80')"
-              }}
-            />
+            <div className="relative w-full max-w-sm mx-auto md:mx-0 md:ml-auto">
+              <div
+                aria-hidden
+                className="absolute -inset-3 md:-inset-4 border border-gold/50 translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6"
+              />
+              <div className="relative aspect-[520/650] overflow-hidden bg-cream shadow-2xl">
+                <Image
+                  src="/laser-machine.png"
+                  alt="MORE Laser Pro 2024 KM1000D diode laser"
+                  fill
+                  sizes="(min-width: 768px) 360px, 80vw"
+                  quality={90}
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="absolute -bottom-4 -left-4 md:-bottom-5 md:-left-5 bg-teal-deep text-cream px-5 py-3 shadow-lg">
+                <p className="font-sans text-[10px] uppercase tracking-ultra text-gold">
+                  KM1000D · 1200W
+                </p>
+                <p className="font-serif italic text-base leading-tight mt-1">
+                  MORE Laser Pro 2024
+                </p>
+              </div>
+            </div>
           </FadeIn>
         </div>
       </section>
