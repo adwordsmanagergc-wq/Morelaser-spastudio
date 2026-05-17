@@ -31,8 +31,7 @@ function HomeContent() {
       key: 'endosphere',
       icon: <Waves strokeWidth={1} size={32} />,
       href: `${prefix}/services`,
-      image:
-        'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80'
+      image: '/service-endosphere.png'
     },
     {
       key: 'facial',
