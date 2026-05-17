@@ -24,31 +24,31 @@ function HomeContent() {
     {
       key: 'laser',
       icon: <Sparkles strokeWidth={1} size={32} />,
-      href: `${prefix}/services`,
+      href: `${prefix}/services?tab=packages`,
       image: '/service-laser.png'
     },
     {
       key: 'endosphere',
       icon: <Waves strokeWidth={1} size={32} />,
-      href: `${prefix}/services`,
+      href: `${prefix}/services?tab=endosphere`,
       image: '/service-endosphere.png'
     },
     {
       key: 'facial',
       icon: <Flower2 strokeWidth={1} size={32} />,
-      href: `${prefix}/services`,
+      href: `${prefix}/services?tab=facial`,
       image: '/service-facial.png'
     },
     {
       key: 'shaving',
       icon: <Scissors strokeWidth={1} size={32} />,
-      href: `${prefix}/services`,
+      href: `${prefix}/services?tab=shaving`,
       image: '/service-shaving.png'
     },
     {
       key: 'combo',
       icon: <Layers strokeWidth={1} size={32} />,
-      href: `${prefix}/services`,
+      href: `${prefix}/services?tab=combo`,
       image:
         'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80'
     }

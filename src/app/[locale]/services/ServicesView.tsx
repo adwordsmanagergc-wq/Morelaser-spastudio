@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star } from 'lucide-react';
@@ -31,12 +32,38 @@ const TABS: { id: TabId; key: string }[] = [
   { id: 'facial', key: 'facial' }
 ];
 
+const VALID_TABS: TabId[] = [
+  'packages',
+  'upperBody',
+  'lowerBody',
+  'subscriptions',
+  'shaving',
+  'combo',
+  'endosphere',
+  'facial'
+];
+
 export default function ServicesView() {
   const t = useTranslations('services');
   const tc = useTranslations('categories');
   const cm = useTranslations('common');
   const locale = useLocale() as 'en' | 'ru';
-  const [tab, setTab] = useState<TabId>('packages');
+  const searchParams = useSearchParams();
+  const initialTab = (searchParams.get('tab') ?? '') as TabId;
+  const [tab, setTab] = useState<TabId>(
+    VALID_TABS.includes(initialTab) ? initialTab : 'packages'
+  );
+  const tabsRef = useRef<HTMLDivElement>(null);
+
+  // Honour later in-page navigation (e.g. browser back/forward) and scroll
+  // into view when arriving from a card link.
+  useEffect(() => {
+    const param = searchParams.get('tab') as TabId | null;
+    if (param && VALID_TABS.includes(param)) {
+      setTab(param);
+      tabsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [searchParams]);
 
   return (
     <>
@@ -54,7 +81,10 @@ export default function ServicesView() {
       <section className="bg-cream pb-32">
         <div className="container-edge">
           {/* Tabs */}
-          <div className="sticky top-20 z-30 bg-cream/95 backdrop-blur-md border-b border-teal-deep/10 -mx-6 md:-mx-10 px-6 md:px-10 py-4 mb-16 overflow-x-auto">
+          <div
+            ref={tabsRef}
+            className="sticky top-20 z-30 bg-cream/95 backdrop-blur-md border-b border-teal-deep/10 -mx-6 md:-mx-10 px-6 md:px-10 py-4 mb-16 overflow-x-auto scroll-mt-24"
+          >
             <div className="flex gap-2 md:gap-4 whitespace-nowrap">
               {TABS.map((tabItem) => (
                 <button
