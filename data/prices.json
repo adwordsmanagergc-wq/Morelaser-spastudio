@@ -1,0 +1,231 @@
+{
+  "currency": "IDR",
+  "note": {
+    "en": "All prices in Indonesian Rupiah. Discounted price shown where applicable.",
+    "ru": "Все цены в индонезийских рупиях. Где применимо — указана цена со скидкой."
+  },
+  "packages": {
+    "id": "packages",
+    "items": [
+      {
+        "id": "pkg-1",
+        "name": { "en": "Brazilian bikini + underarms", "ru": "Бразильское бикини + подмышки" },
+        "wasPrice": 1350000,
+        "price": 1000000
+      },
+      {
+        "id": "pkg-2",
+        "name": { "en": "Brazilian bikini + underarms + half legs", "ru": "Бразильское бикини + подмышки + ноги до колена" },
+        "wasPrice": 2250000,
+        "price": 1600000
+      },
+      {
+        "id": "pkg-3",
+        "name": { "en": "Brazilian bikini + underarms + full legs", "ru": "Бразильское бикини + подмышки + ноги полностью" },
+        "wasPrice": 3050000,
+        "price": 2100000
+      },
+      {
+        "id": "pkg-4",
+        "name": {
+          "en": "Full Body — bikini + underarms + legs + arms + areolas + navel line",
+          "ru": "Full Body — бикини + подмышки + ноги + руки + ареолы + дорожка"
+        },
+        "wasPrice": 5000000,
+        "price": 3200000
+      },
+      {
+        "id": "pkg-5",
+        "name": {
+          "en": "Full Full Body — adds back + buttocks + upper lip",
+          "ru": "Full Full Body — добавляет спину + ягодицы + над верхней губой"
+        },
+        "wasPrice": 7400000,
+        "price": 5000000
+      }
+    ]
+  },
+  "upperBody": {
+    "id": "upperBody",
+    "items": [
+      { "id": "u-1", "name": { "en": "Full face", "ru": "Лицо полностью" }, "price": 900000 },
+      { "id": "u-2", "name": { "en": "Face area", "ru": "Зона лица" }, "price": 300000 },
+      { "id": "u-3", "name": { "en": "Upper lip", "ru": "Над верхней губой" }, "price": 300000 },
+      { "id": "u-4", "name": { "en": "Chin & upper lip", "ru": "Подбородок и над губой" }, "price": 450000 },
+      { "id": "u-5", "name": { "en": "Neck", "ru": "Шея" }, "price": 400000 },
+      { "id": "u-6", "name": { "en": "Areolas", "ru": "Ареолы" }, "price": 400000 },
+      { "id": "u-7", "name": { "en": "Underarms", "ru": "Подмышки" }, "price": 550000 },
+      { "id": "u-8", "name": { "en": "Half arms", "ru": "Руки до локтя" }, "price": 700000 },
+      { "id": "u-9", "name": { "en": "Full arms", "ru": "Руки полностью" }, "price": 1200000 },
+      { "id": "u-10", "name": { "en": "Hands & fingers", "ru": "Кисти и пальцы" }, "price": 350000 },
+      { "id": "u-11", "name": { "en": "Tummy", "ru": "Живот" }, "price": 800000 },
+      { "id": "u-12", "name": { "en": "Half back", "ru": "Половина спины" }, "price": 800000 },
+      { "id": "u-13", "name": { "en": "Full back", "ru": "Спина полностью" }, "price": 1400000 }
+    ]
+  },
+  "lowerBody": {
+    "id": "lowerBody",
+    "items": [
+      { "id": "l-1", "name": { "en": "Half legs", "ru": "Ноги до колена" }, "price": 900000 },
+      { "id": "l-2", "name": { "en": "Full legs", "ru": "Ноги полностью" }, "price": 1700000 },
+      { "id": "l-3", "name": { "en": "Knees", "ru": "Колени" }, "price": 500000 },
+      { "id": "l-4", "name": { "en": "Buttocks", "ru": "Ягодицы" }, "price": 700000 },
+      { "id": "l-5", "name": { "en": "Navel line", "ru": "Дорожка" }, "price": 350000 },
+      { "id": "l-6", "name": { "en": "Classic bikini", "ru": "Классическое бикини" }, "price": 550000 },
+      { "id": "l-7", "name": { "en": "Brazilian bikini", "ru": "Бразильское бикини" }, "price": 800000 },
+      { "id": "l-8", "name": { "en": "Toes", "ru": "Пальцы ног" }, "price": 300000 },
+      { "id": "l-9", "name": { "en": "Feet & toes", "ru": "Стопы и пальцы" }, "price": 400000 }
+    ]
+  },
+  "subscriptions": {
+    "id": "subscriptions",
+    "items": [
+      {
+        "id": "sub-1",
+        "name": { "en": "Brazilian bikini + underarms", "ru": "Бразильское бикини + подмышки" },
+        "tiers": [
+          { "visits": 1, "price": 1000000 },
+          { "visits": 3, "price": 900000 },
+          { "visits": 5, "price": 800000 }
+        ]
+      },
+      {
+        "id": "sub-2",
+        "name": { "en": "+ half legs", "ru": "+ ноги до колена" },
+        "tiers": [
+          { "visits": 1, "price": 1600000 },
+          { "visits": 3, "price": 1500000 },
+          { "visits": 5, "price": 1400000 }
+        ]
+      },
+      {
+        "id": "sub-3",
+        "name": { "en": "+ full legs", "ru": "+ ноги полностью" },
+        "tiers": [
+          { "visits": 1, "price": 2100000 },
+          { "visits": 3, "price": 1900000 },
+          { "visits": 5, "price": 1800000 }
+        ]
+      },
+      {
+        "id": "sub-4",
+        "name": { "en": "Full Body subscription", "ru": "Full Body абонемент" },
+        "tiers": [
+          { "visits": 1, "price": 3200000 },
+          { "visits": 3, "price": 3000000 },
+          { "visits": 5, "price": 2800000 }
+        ]
+      }
+    ]
+  },
+  "shavingWomen": {
+    "id": "shavingWomen",
+    "items": [
+      { "id": "sw-1", "name": { "en": "Bikini / waist / hips / tummy", "ru": "Бикини / талия / бёдра / живот" }, "price": 120000 },
+      { "id": "sw-2", "name": { "en": "Shins / half arms", "ru": "Голени / руки до локтя" }, "price": 110000 },
+      { "id": "sw-3", "name": { "en": "Legs completely / back / chest+tummy / arms completely", "ru": "Ноги полностью / спина / грудь+живот / руки полностью" }, "price": 200000 },
+      { "id": "sw-4", "name": { "en": "Underarms / face / neck / hands", "ru": "Подмышки / лицо / шея / кисти" }, "price": 100000 },
+      { "id": "sw-5", "name": { "en": "Navel line / face area / instep and toes", "ru": "Дорожка / зона лица / подъём и пальцы стоп" }, "price": 80000 }
+    ]
+  },
+  "shavingMen": {
+    "id": "shavingMen",
+    "items": [
+      { "id": "sm-1", "name": { "en": "Bikini / full arms / buttocks / lower back / full legs / back / chest+tummy", "ru": "Бикини / руки полностью / ягодицы / поясница / ноги полностью / спина / грудь+живот" }, "price": 200000 },
+      { "id": "sm-2", "name": { "en": "Underarms / neck / navel line / face", "ru": "Подмышки / шея / дорожка / лицо" }, "price": 120000 },
+      { "id": "sm-3", "name": { "en": "Face area / instep and toes", "ru": "Зона лица / подъём и пальцы стоп" }, "price": 80000 }
+    ]
+  },
+  "combo": {
+    "id": "combo",
+    "discount": 0.2,
+    "options": [
+      { "id": "c-1", "title": { "en": "Combo 1 — Laser + Peeling", "ru": "Комбо 1 — Лазер + Пилинг" } },
+      { "id": "c-2", "title": { "en": "Combo 2 — Laser + Face Massage", "ru": "Комбо 2 — Лазер + Массаж лица" } },
+      { "id": "c-3", "title": { "en": "Combo 3 — Laser + Eyebrow Services", "ru": "Комбо 3 — Лазер + Брови" } },
+      { "id": "c-4", "title": { "en": "Combo 4 — Laser + Cosmetologist Services", "ru": "Комбо 4 — Лазер + Косметолог" } }
+    ],
+    "featured": [
+      {
+        "id": "f-1",
+        "tag": { "en": "Most Popular", "ru": "Самое популярное" },
+        "name": { "en": "Bikini + underarms + half legs + peeling", "ru": "Бикини + подмышки + ноги до колена + пилинг" },
+        "wasPrice": 2000000,
+        "price": 1600000
+      },
+      {
+        "id": "f-2",
+        "tag": { "en": "Favorite", "ru": "Любимое" },
+        "name": { "en": "Bikini + underarms + half legs + facial massage", "ru": "Бикини + подмышки + ноги до колена + массаж лица" },
+        "wasPrice": 2350000,
+        "price": 1880000
+      },
+      {
+        "id": "f-3",
+        "tag": { "en": "Most Profitable", "ru": "Самое выгодное" },
+        "name": { "en": "Underarms + bikini + peeling", "ru": "Подмышки + бикини + пилинг" },
+        "wasPrice": 1400000,
+        "price": 1120000
+      }
+    ]
+  },
+  "endosphere": {
+    "id": "endosphere",
+    "subtitle": { "en": "Full Body, 60-minute subscriptions", "ru": "Full Body, абонементы 60 минут" },
+    "items": [
+      {
+        "id": "e-1",
+        "name": { "en": "1 visit", "ru": "1 визит" },
+        "wasPrice": 1200000,
+        "price": 720000
+      },
+      {
+        "id": "e-2",
+        "name": { "en": "3 visits", "ru": "3 визита" },
+        "wasPrice": 3600000,
+        "price": 2160000
+      },
+      {
+        "id": "e-3",
+        "name": { "en": "5 visits", "ru": "5 визитов" },
+        "wasPrice": 6000000,
+        "price": 3600000
+      }
+    ]
+  },
+  "facial": {
+    "id": "facial",
+    "items": [
+      {
+        "id": "fa-1",
+        "name": { "en": "Face massage · 90 min (lymphatic drainage / myofascial / buccal)", "ru": "Массаж лица · 90 мин (лимфодренаж / миофасциальный / буккальный)" },
+        "price": 700000
+      },
+      {
+        "id": "fa-2",
+        "name": { "en": "Face cleaning · 90 min (ultrasonic / manual)", "ru": "Чистка лица · 90 мин (УЗ / мануальная)" },
+        "price": 900000
+      },
+      { "id": "fa-3", "name": { "en": "Alginate mask", "ru": "Альгинатная маска" }, "price": 350000 },
+      {
+        "id": "fa-4",
+        "name": { "en": "90-min program with peeling", "ru": "90-минутная программа с пилингом" },
+        "price": 1700000
+      },
+      {
+        "id": "fa-5",
+        "name": { "en": "90-min program without peeling", "ru": "90-минутная программа без пилинга" },
+        "price": 1300000
+      }
+    ],
+    "programs": [
+      { "id": "p-1", "name": { "en": "Velvet Skin — reduces pigmentation", "ru": "Velvet Skin — сокращает пигментацию" } },
+      { "id": "p-2", "name": { "en": "Hydration & Lifting", "ru": "Увлажнение и Лифтинг" } },
+      { "id": "p-3", "name": { "en": "Glowing Skin — anti-acne", "ru": "Glowing Skin — анти-акне" } }
+    ],
+    "addOn": {
+      "en": "+100,000 IDR for natural essential oils",
+      "ru": "+100 000 IDR за натуральные эфирные масла"
+    }
+  }
+}

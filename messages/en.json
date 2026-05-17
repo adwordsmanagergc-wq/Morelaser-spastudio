@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Our Technology",
+    "services": "Services & Pricing",
+    "treatment": "Treatment Info",
+    "booking": "Book",
+    "contact": "Contact"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "viewPricing": "View Pricing",
+    "learnMore": "Learn More",
+    "from": "from",
+    "was": "was",
+    "now": "now",
+    "perVisit": "per visit",
+    "visits": "visits",
+    "save": "Save",
+    "discount": "off",
+    "currency": "IDR",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "address": "Ubud, Bali, Indonesia",
+    "hours": "Daily · 10:00 – 21:00"
+  },
+  "home": {
+    "tagline": "Painless Laser Hair Removal & Holistic Beauty in the Heart of Ubud.",
+    "subtag": "An intimate sanctuary for refined skin care, designed for the modern traveller and resident alike.",
+    "introTitle": "A Quiet Luxury, Reimagined for Ubud.",
+    "introBody": "Four years of expertise distilled into a single Ubud sanctuary. Our MORE Laser Pro 2024 KM1000D diode laser delivers truly painless treatment with an Italian cooling system, a precision manipulator from the United States, and German electronics — supplied for the European market.",
+    "featuredTitle": "Signature Services",
+    "featuredSub": "Each ritual is performed with senior-level care and the finest medical-grade technology.",
+    "testimonialsTitle": "Whispers from Our Guests",
+    "testimonialsSub": "Returning client? Enjoy 5% off your next visit with us.",
+    "finalCtaTitle": "Reserve Your Sanctuary.",
+    "finalCtaBody": "Book a personal consultation or your next treatment. We will respond within the hour.",
+    "services": {
+      "laser": {
+        "title": "Laser Hair Removal",
+        "desc": "Painless diode laser treatment, safe alongside sun exposure."
+      },
+      "endosphere": {
+        "title": "Endosphere Therapy",
+        "desc": "Compressive micro-vibration for lymphatic drainage and contouring."
+      },
+      "facial": {
+        "title": "Facial Care",
+        "desc": "Lifting, hydration and luminosity in 90-minute editorial rituals."
+      },
+      "shaving": {
+        "title": "Body Shaving",
+        "desc": "Meticulously precise grooming for women and gentlemen."
+      },
+      "combo": {
+        "title": "Combo Procedures",
+        "desc": "Layered rituals at a refined 20% saving."
+      }
+    },
+    "testimonials": [
+      { "name": "Aïsha M.", "city": "Paris", "quote": "Truly painless and impeccably hygienic. The interior feels like a Aman suite." },
+      { "name": "Daria P.", "city": "Moscow", "quote": "I've followed them since their Moscow days. Bali has only refined them further." },
+      { "name": "Elena S.", "city": "London", "quote": "Result visible after the first session. I rebooked the same day." },
+      { "name": "Yuki T.", "city": "Tokyo", "quote": "Endosphere was transformative. The team is gracious and discreet." }
+    ]
+  },
+  "about": {
+    "eyebrow": "Our Technology",
+    "title": "Precision, Quietly Engineered.",
+    "intro": "MORE Laser Pro 2024 KM1000D is the heart of our sanctuary — a 1200-watt diode laser developed for the European market and chosen for its uncompromising calibration.",
+    "specsTitle": "Engineered with Intention",
+    "specs": [
+      { "label": "Power", "value": "1200W diode laser" },
+      { "label": "Cooling", "value": "Italian cooling system" },
+      { "label": "Manipulator", "value": "Manufactured in the United States" },
+      { "label": "Electronics", "value": "German engineering" },
+      { "label": "Market", "value": "Supplied for the European market" },
+      { "label": "Sensation", "value": "Painless treatment, even on sensitive skin" }
+    ],
+    "experienceTitle": "Four Years of Refinement.",
+    "experienceBody": "Our journey began in a Moscow studio more than four years ago and has now found its quiet home in Ubud. The same hands, the same exacting standards — set against the lush calm of Bali.",
+    "safeTitle": "Safe Alongside the Sun.",
+    "safeBody": "Suitable for tanned skin, our diode technology allows you to continue enjoying sun-filled days throughout your course — a rarity among laser modalities."
+  },
+  "services": {
+    "eyebrow": "Services & Pricing",
+    "title": "An Editorial Menu of Care.",
+    "intro": "All pricing is in Indonesian Rupiah (IDR). Discounted pricing is shown beside the original. Subscriptions are charged per visit.",
+    "tabs": {
+      "packages": "Women's Packages",
+      "upperBody": "Single Sessions — Upper",
+      "lowerBody": "Single Sessions — Lower",
+      "subscriptions": "Subscriptions",
+      "shaving": "Body Shaving",
+      "combo": "Combo Procedures",
+      "endosphere": "Endosphere",
+      "facial": "Facial Care"
+    },
+    "comboNote": "Combine any laser session with a complementary treatment for 20% off.",
+    "featuredCombosTitle": "Editor's Selections"
+  },
+  "treatment": {
+    "eyebrow": "Treatment Information",
+    "title": "Everything You Will Want to Know.",
+    "sectionsTitle": "Your Course at a Glance",
+    "sessionsTitle": "How many sessions do I need?",
+    "sessions": [
+      "Results become noticeable after the very first session.",
+      "Some hair will naturally release approximately two weeks after treatment.",
+      "A full course is typically 7–9 sessions, spaced once per month.",
+      "You may shave between sessions — please avoid waxing or epilation."
+    ],
+    "prepareTitle": "How to prepare",
+    "prepare": [
+      "Shave the treatment area one day prior, in the direction of hair growth.",
+      "Avoid solarium or sun-bathing for 1–3 days before your visit.",
+      "Arrive with clean skin — no cosmetics, oils or creams on the area.",
+      "If you have used a depilatory cream, please rinse off thoroughly."
+    ],
+    "afterTitle": "Aftercare",
+    "after": [
+      "Avoid cosmetics or deodorant on the treated area for the day.",
+      "Avoid solarium and active sun for 3–7 days following treatment.",
+      "No scrubs for at least 3 days.",
+      "Avoid baths, saunas and hot tubs while skin is sensitive.",
+      "Only shave between sessions — do not wax or epilate."
+    ],
+    "contraindicationsTitle": "Contraindications",
+    "contraindicationsIntro": "For your safety, please share any of the following before booking. Our team will guide you with discretion.",
+    "contraindications": [
+      "Acute or infectious diseases accompanied by fever",
+      "Inflammatory processes",
+      "Hernias (inguinal or lumbar)",
+      "Autoimmune diseases",
+      "Severe rosacea",
+      "Pregnancy and lactation",
+      "Malignant or benign neoplasms in the treatment area",
+      "Chronic diseases in the acute phase (e.g. epilepsy)",
+      "Circulatory and blood-clotting disorders",
+      "Scars, wounds, or skin diseases at the treatment site",
+      "Thrombophlebitis, phlebitis, lymphadenitis, severe varicose veins, vasculitis",
+      "Lymphostasis",
+      "Severe obesity (grade 3) or general exhaustion",
+      "Pacemaker"
+    ]
+  },
+  "booking": {
+    "eyebrow": "Reservations",
+    "title": "Book Your Visit.",
+    "intro": "Share a few details and we will reply personally within the hour.",
+    "step": "Step",
+    "of": "of",
+    "next": "Continue",
+    "back": "Back",
+    "submit": "Send Request",
+    "submitting": "Sending…",
+    "success": "Thank you. We have your request and will be in touch shortly.",
+    "error": "Something went wrong. Please try again or message us on WhatsApp.",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "phoneWa": "This is also my WhatsApp",
+      "service": "Preferred service",
+      "date": "Preferred date",
+      "time": "Preferred time",
+      "notes": "Anything else we should know?",
+      "returning": "I'm a returning client — apply 5% off",
+      "selectService": "Select a service"
+    }
+  },
+  "contact": {
+    "eyebrow": "Visit Us",
+    "title": "Find the Sanctuary.",
+    "addressLabel": "Address",
+    "hoursLabel": "Hours",
+    "instagramLabel": "Instagram",
+    "whatsappLabel": "WhatsApp",
+    "messageUs": "Message on WhatsApp"
+  },
+  "footer": {
+    "tagline": "Painless laser & holistic beauty in Ubud, Bali.",
+    "rights": "All rights reserved.",
+    "explore": "Explore",
+    "visit": "Visit",
+    "follow": "Follow"
+  },
+  "categories": {
+    "packages": "Women's Laser Packages",
+    "upperBody": "Women's Single-Session Pricing — Upper Body",
+    "lowerBody": "Women's Single-Session Pricing — Lower Body",
+    "subscriptions": "Subscriptions",
+    "shavingWomen": "Body Shaving — Women",
+    "shavingMen": "Body Shaving — Men",
+    "combo": "Combo Procedures",
+    "endosphere": "Endosphere Therapy",
+    "facial": "Facial Care"
+  }
+}

@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #faf7f2;
+  --ink: #1a5f6f;
+  --gold: #c9a961;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: #1f2a2e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'ss01', 'ss02', 'liga';
+}
+
+::selection {
+  background: #1a5f6f;
+  color: #faf7f2;
+}
+
+/* Refined scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #faf7f2; }
+::-webkit-scrollbar-thumb { background: #c9a961; border-radius: 999px; }
+
+@layer base {
+  h1, h2, h3, h4, h5 {
+    @apply font-serif tracking-tight text-teal-deep;
+    font-weight: 400;
+  }
+  h1 { @apply text-5xl md:text-7xl leading-[1.05]; }
+  h2 { @apply text-4xl md:text-6xl leading-[1.05]; }
+  h3 { @apply text-2xl md:text-4xl leading-tight; }
+  p, li { @apply font-sans text-[15px] md:text-base leading-relaxed text-teal-900/80; }
+  a { @apply transition-colors; }
+}
+
+@layer components {
+  .container-edge { @apply mx-auto w-full max-w-7xl px-6 md:px-10; }
+  .eyebrow {
+    @apply font-sans text-[11px] md:text-xs uppercase tracking-ultra text-gold;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-sans text-sm uppercase tracking-widest transition-all duration-300;
+    padding: 0.95rem 2rem;
+  }
+  .btn-primary {
+    @apply btn bg-teal-deep text-cream hover:bg-teal-700 hover:tracking-ultra;
+  }
+  .btn-outline {
+    @apply btn border border-teal-deep/40 text-teal-deep hover:bg-teal-deep hover:text-cream;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-teal-deep hover:bg-gold-500 hover:text-cream;
+  }
+  .ornament {
+    @apply mx-auto h-px w-12 bg-gold;
+  }
+  .pull-quote {
+    @apply font-serif italic text-3xl md:text-4xl text-teal-deep leading-snug;
+  }
+  .section { @apply py-24 md:py-32; }
+  .card-hover {
+    @apply transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-2xl;
+  }
+  .input {
+    @apply w-full border border-teal-deep/20 bg-cream/60 px-4 py-3 font-sans text-base text-teal-deep placeholder:text-teal-deep/40 focus:border-gold focus:outline-none focus:ring-0 transition-colors;
+  }
+  .label {
+    @apply block font-sans text-[11px] uppercase tracking-widest text-teal-deep/70 mb-2;
+  }
+}
+
+/* Subtle noise overlay */
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(26,95,111,0.06) 1px, transparent 1px);
+  background-size: 6px 6px;
+  opacity: 0.4;
+}
