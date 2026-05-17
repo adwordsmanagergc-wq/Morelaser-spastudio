@@ -8,7 +8,7 @@ export default function Footer() {
   const locale = useLocale();
   const prefix = locale === 'en' ? '' : `/${locale}`;
   const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '6281234567890';
-  const ig = process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE ?? 'morelaserspa';
+  const ig = process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE ?? 'more.laser.bali';
 
   return (
     <footer className="bg-teal-deep text-cream/90">

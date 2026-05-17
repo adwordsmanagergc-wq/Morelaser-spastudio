@@ -1,0 +1,31 @@
+{
+  "handle": "more.laser.bali",
+  "url": "https://www.instagram.com/more.laser.bali/",
+  "_notes": "Drop 6 square JPG/PNG files into public/instagram/ and reference them below. Use 1080x1080 for crisp tiles. The `caption` field is shown as alt text and as an overlay on hover.",
+  "tiles": [
+    {
+      "src": "/our-technology.png",
+      "caption": { "en": "Our quiet sanctuary in Ubud", "ru": "Наше тихое пространство в Убуде" }
+    },
+    {
+      "src": "/service-laser.png",
+      "caption": { "en": "Painless laser hair removal", "ru": "Безболезненная лазерная эпиляция" }
+    },
+    {
+      "src": "/service-facial.png",
+      "caption": { "en": "Editorial facial care, 90 minutes", "ru": "Уход за лицом, 90 минут" }
+    },
+    {
+      "src": "/service-endosphere.png",
+      "caption": { "en": "Endosphere therapy", "ru": "Эндосфера терапия" }
+    },
+    {
+      "src": "/service-shaving.png",
+      "caption": { "en": "Refined body shaving", "ru": "Деликатное бритьё тела" }
+    },
+    {
+      "src": "/hero.png",
+      "caption": { "en": "Welcome to MORE", "ru": "Добро пожаловать в MORE" }
+    }
+  ]
+}

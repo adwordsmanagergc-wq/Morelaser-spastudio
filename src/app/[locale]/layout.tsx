@@ -94,7 +94,7 @@ export default async function LocaleLayout({
     geo: { '@type': 'GeoCoordinates', latitude: -8.5069, longitude: 115.2625 },
     openingHours: 'Mo-Su 10:00-21:00',
     sameAs: [
-      `https://instagram.com/${process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE ?? 'morelaserspa'}`
+      `https://instagram.com/${process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE ?? 'more.laser.bali'}`
     ]
   };
 

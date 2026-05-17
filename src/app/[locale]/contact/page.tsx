@@ -14,7 +14,7 @@ function Contact() {
   const t = useTranslations('contact');
   const tc = useTranslations('common');
   const wa = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '6281234567890';
-  const ig = process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE ?? 'morelaserspa';
+  const ig = process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE ?? 'more.laser.bali';
 
   return (
     <>

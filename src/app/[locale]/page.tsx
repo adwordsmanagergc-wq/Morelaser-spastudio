@@ -7,6 +7,7 @@ import Hero from '@/components/Hero';
 import FadeIn from '@/components/FadeIn';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCarousel, { type Testimonial } from '@/components/TestimonialCarousel';
+import InstagramFeed from '@/components/InstagramFeed';
 
 export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
@@ -133,6 +134,14 @@ function HomeContent() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Instagram showcase */}
+      <InstagramFeed
+        eyebrow={t('instagramEyebrow')}
+        title={t('instagramTitle')}
+        subtitle={t('instagramSub')}
+        followLabel={t('instagramFollow')}
+      />
 
       {/* Final CTA + Map */}
       <section className="relative section bg-teal-deep text-cream overflow-hidden">
