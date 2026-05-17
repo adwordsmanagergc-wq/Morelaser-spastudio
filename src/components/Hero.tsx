@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { ChevronDown } from 'lucide-react';
@@ -13,17 +14,20 @@ export default function Hero() {
 
   return (
     <section className="relative h-[100svh] min-h-[680px] w-full overflow-hidden">
-      {/* Background — parallax image with overlay */}
+      {/* Background — brand photograph with editorial overlay */}
       <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2400&q=80')"
-          }}
+        <Image
+          src="/hero.png"
+          alt="The MORE Laser & Spa team in Ubud"
+          fill
+          priority
+          sizes="100vw"
+          quality={90}
+          className="object-cover object-[center_30%]"
         />
-        <div className="absolute inset-0 bg-gradient-hero" />
-        <div className="absolute inset-0 bg-teal-deep/20" />
+        {/* Editorial wash — deep teal at the bottom for legibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-teal-deep/10 via-teal-deep/35 to-teal-deep/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-teal-deep/45 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 h-full container-edge flex flex-col justify-center">
