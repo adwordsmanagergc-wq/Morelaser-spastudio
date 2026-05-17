@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
@@ -62,13 +63,22 @@ function HomeContent() {
       <section className="section bg-cream">
         <div className="container-edge grid md:grid-cols-12 gap-12 md:gap-20 items-center">
           <FadeIn className="md:col-span-5">
-            <div
-              className="aspect-[4/5] w-full bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1400&q=80')"
-              }}
-            />
+            <div className="relative w-full max-w-sm mx-auto md:mx-0">
+              <div
+                aria-hidden
+                className="absolute -inset-3 md:-inset-4 border border-gold/50 -translate-x-4 -translate-y-4 md:-translate-x-6 md:-translate-y-6"
+              />
+              <div className="relative aspect-[520/650] w-full overflow-hidden bg-cream shadow-2xl">
+                <Image
+                  src="/laser-machine.png"
+                  alt="MORE Laser Pro 2024 KM1000D — our diode laser in Ubud"
+                  fill
+                  sizes="(min-width: 768px) 380px, 80vw"
+                  quality={90}
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </FadeIn>
           <FadeIn className="md:col-span-7" delay={0.15}>
             <span className="eyebrow">{tc('address')}</span>
