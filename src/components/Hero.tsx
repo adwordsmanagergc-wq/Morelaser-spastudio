@@ -108,7 +108,7 @@ export default function Hero() {
               aria-hidden
               className="absolute -inset-3 md:-inset-4 border border-gold/60 translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6"
             />
-            <div className="relative aspect-[1152/1212] overflow-hidden bg-cream shadow-2xl">
+            <div className="relative aspect-[928/1152] overflow-hidden bg-cream shadow-2xl">
               <Image
                 src="/hero.png"
                 alt="The MORE Laser & Spa team in Ubud"
